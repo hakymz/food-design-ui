@@ -1,0 +1,450 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f9f6f2;
+}
+
+header {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+nav {
+  position: absolute;
+  top: 25px;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 80px;
+  z-index: 2;
+}
+
+h1 {
+  font-family: "Lobster";
+}
+.logo {
+  width: 20%;
+  color: white;
+}
+
+.list-items {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: #fff;
+  width: 0px;
+  transition: 0.4s;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.curve {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.banner {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.banner-left,
+.banner-right {
+  width: 50%;
+  height: 100%;
+}
+
+.banner-left img {
+  margin-top: 120px;
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.banner-heading {
+  padding-top: 200px;
+  font-size: 48px;
+  line-height: 50px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.btn {
+  color: #000;
+  background: #fff;
+  padding: 17px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  transition: 0.4s;
+}
+
+.btn-sec {
+  background: #d72535;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #ad1b27;
+  color: #fff;
+}
+
+section {
+  padding: 0px 100px;
+}
+
+.section1 {
+  display: flex;
+  padding-bottom: 70px;
+}
+
+.heading {
+  font-size: 40px;
+}
+
+.section1-left,
+.section1-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section1-left p {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 13px;
+}
+
+.section1-right img {
+  height: 250px;
+  width: 250px;
+}
+
+.section2 {
+  position: relative;
+  background: #d72535;
+  display: flex;
+  justify-content: center;
+}
+
+.section2-content {
+  z-index: 1;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section2 > img {
+  position: absolute;
+  top: -5px;
+  width: 100%;
+  height: 100%;
+}
+
+.section2-content h1 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.chefs-card {
+  margin: 5px;
+  height: 100px;
+  min-width: 300px;
+  max-width: 600px;
+  background: #f13e4e;
+  display: flex;
+  box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.chefs-card img {
+  height: 100px;
+  width: 100px;
+  border-bottom-left-radius: 10px;
+}
+
+.card-details {
+  width: calc(100% - 100px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.food-name {
+  width: 35%;
+  min-width: 100px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+.description {
+  width: 35%;
+  color: white;
+  font-size: 10px;
+}
+
+.price,
+.action {
+  width: 15%;
+  color: #fff;
+  font-weight: bold;
+  background: #d1303d;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action {
+  background: #ad1b27;
+  border-top-right-radius: 10px;
+}
+
+.section3 {
+  padding-top: 50px;
+  width: 100%;
+  margin-bottom: 70px;
+}
+.section3 h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section3-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  width: 200px;
+  min-width: 200px;
+  background: #fff;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 2px 2px 30px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 50px 15px;
+}
+
+.service-card i {
+  margin-top: 10px;
+  font-size: 30px;
+  color: #d72535;
+}
+
+.service-card h3 {
+  margin-top: 5px;
+}
+
+.service-card p {
+  margin-top: 7px;
+  font-size: 10px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: #d72535;
+}
+
+footer img {
+  position: absolute;
+  top: -5px;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-content {
+  position: relative;
+  padding: 80px 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+.about-us,
+.contact-us,
+.email {
+  flex: 1;
+  padding: 20px 5px;
+  min-width: 300px;
+}
+
+.about-us p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.contact-us-btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-btn {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
+
+.c-btn i {
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.email-input {
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 25px;
+  border: none;
+  margin: 15px 0px;
+  outline: none;
+}
+
+.menu-btn {
+  color: white;
+  font-size: 25px;
+  display: none;
+}
+
+@media (max-width: 750px), (orientation: portrait) {
+  nav {
+    top: 0;
+    padding: 0px 18px;
+    height: 70px;
+    position: fixed;
+    background: #d72535;
+  }
+
+  .list-items {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    flex-direction: column;
+    align-items: center;
+    top: 70px;
+    background: #d72535;
+    padding-bottom: 150px;
+    transition: 0.4s;
+  }
+
+  .list-items.active {
+    left: 0;
+  }
+
+  .list {
+    padding: 20px;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .banner {
+    height: auto;
+    padding-bottom: 110px;
+  }
+
+  .banner-left img {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner-heading {
+    padding-top: 100px;
+    padding-left: 5px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .heading {
+    font-size: 25px;
+  }
+
+  .section1 {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  .section1-left,
+  .section1-right {
+    width: 100%;
+  }
+
+  .section1-left h1 {
+    margin-top: 15px;
+  }
+
+  .section1-right img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .chefs-card {
+    height: 70px;
+  }
+
+  .chefs-card img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .card-details {
+    width: calc(100% - 70px);
+  }
+
+  .food-name,
+  .description {
+    font-size: 8px;
+  }
+
+  .price,
+  .action {
+    font-size: 10px;
+  }
+}
